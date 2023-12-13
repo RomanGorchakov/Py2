@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 if __name__ == '__main__':
     a, b, c = list(map(float, input("Введите три числа: ").split()))
     
