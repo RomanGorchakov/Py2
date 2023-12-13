@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import math
 import sys
 
@@ -14,9 +17,9 @@ if __name__ == '__main__':
     a = x
     S, n = a, 1
 
-while math.fabs(a) > EPS:
-    a *= (x * 2 * n) / ((2 * n + 2) ** 2)
-    S += a
-    n += 1
+    while math.fabs(a) > EPS:
+        a *= (x * 2 * n) / ((2 * n + 2) ** 2)
+        S += a
+        n += 1
     
-print(f"Chi({x}) = {EULER + math.log(math.fabs(x)) + S}")
+    print(f"Chi({x}) = {EULER + math.log(math.fabs(x)) + S}")
